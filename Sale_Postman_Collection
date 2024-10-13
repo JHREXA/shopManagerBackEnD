@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "e61e3862-9e2e-40b8-88ce-d03ae6c193a9",
+		"name": "Sale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38628161"
+	},
+	"item": [
+		{
+			"name": "Create a sale",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"saleCode\": 987,\r\n    \"date\": \"2024-03-12\",\r\n    \"productList\":[\r\n        {\r\n            \"productCode\":1\r\n        },\r\n        {\r\n            \"productCode\":2\r\n        },\r\n        {\r\n            \"productCode\":3,\r\n        }\r\n    ],\r\n    \"client\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sales/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sales",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the sales",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get one sale",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a sale",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a sale",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get the products of a sale:",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get the sales of a day",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get the biggest sale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sales/biggestSale",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sales",
+						"biggestSale"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

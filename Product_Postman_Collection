@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "be611727-03b8-436e-8537-d9337a44e0cd",
+		"name": "Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38628161"
+	},
+	"item": [
+		{
+			"name": "Create a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productCode\": 1,\r\n    \"name\": \"Chocolate\",\r\n    \"brand\": \"Cacao Choc\",\r\n    \"price\": 3.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/products/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get one product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getting all the products out of stock (quantity < 5)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
